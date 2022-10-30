@@ -9,7 +9,7 @@ export class ResidencePermitCommandHandler implements CommandHandler {
   private logger = new AppLogger('RESIDENCE PERMIT COMMAND: ')
 
   async handle(payload: TelegramUpdateMessage): Promise<void> {
-    const file = fs.readFileSync('src/assets/Turkey-residence-permit.pdf')
+    const file = fs.readFileSync('../../../assets/Turkey-residence-permit.pdf')
     const formData = new FormData()
     formData.append('chat_id', payload.message.chat.id)
     formData.append('document', file, 'residence-permit.pdf')
