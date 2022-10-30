@@ -1,0 +1,19 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": "8080"
+  },
+  "bodyParser": {
+    "limit": "100kb"
+  },
+  "corsHeaders": [
+    "Link"
+  ],
+  "mongodb": {
+    "uri": "mongodb+srv://alanya_bot_user:5ZbQalUZVpeq96Sg@cluster0.vdphaub.mongodb.net/?retryWrites=true&w=majority",
+    "database": "",
+    "collection": {
+      "user": "users"
+    }
+  }
+}

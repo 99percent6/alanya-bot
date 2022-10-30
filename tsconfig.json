@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "target": "es2020",
+    "strict": false,
+    "allowJs": true,
+    "importHelpers": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "typeRoots": [
+      "@types",
+      "./node_modules/@types"
+    ],
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
