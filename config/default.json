@@ -1,7 +1,7 @@
 {
   "server": {
     "host": "0.0.0.0",
-    "port": "443"
+    "port": "80"
   },
   "bodyParser": {
     "limit": "100kb"
