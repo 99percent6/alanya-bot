@@ -10,10 +10,15 @@
     "Link"
   ],
   "mongodb": {
-    "uri": "mongodb+srv://alanya_bot_user:5ZbQalUZVpeq96Sg@cluster0.vdphaub.mongodb.net/?retryWrites=true&w=majority",
-    "database": "alanya-bot",
+    "uri": "",
+    "database": "",
     "collection": {
       "user": "users"
+    }
+  },
+  "telegram": {
+    "bot": {
+      "token": ""
     }
   }
 }

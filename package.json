@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Alanya information telegram bot",
   "private": true,
-  "main": "dist",
+  "main": "dist/index.js",
   "engines": {
     "node": ">=14.15.0"
   },

@@ -4,6 +4,12 @@
     "port": "PORT"
   },
   "database": {
-    "uri": "MONGO_DB_URL"
+    "uri": "MONGO_DB_URL",
+    "database": "MONGO_DB_DATABASE"
+  },
+  "telegram": {
+    "bot": {
+      "token": "TELEGRAM_BOT_TOKEN"
+    }
   }
 }

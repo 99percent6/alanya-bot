@@ -1,12 +1,15 @@
 import axios from 'axios'
+import config from 'config'
 import { CommandHandler } from '../../../interfaces/commands'
 import { TelegramUpdateMessage } from '../../../interfaces/telegram'
 import { User } from '../../../vendors/mongo'
 
 export class StartCommandHandler implements CommandHandler {
+  private readonly BOT_TOKEN = config.get<string>('telegram.bot.token')
+
   async handle(payload: TelegramUpdateMessage): Promise<void> {
     await axios.post(
-      'https://api.telegram.org/bot5564333546:AAG4DDyqfvnUSqf-yjeJjlfZdNQMhBl2q0U/setMyCommands',
+      `https://api.telegram.org/${this.BOT_TOKEN}/setMyCommands`,
       {
         commands: [
           {
@@ -45,7 +48,7 @@ export class StartCommandHandler implements CommandHandler {
       },
     )
     await axios.post(
-      'https://api.telegram.org/bot5564333546:AAG4DDyqfvnUSqf-yjeJjlfZdNQMhBl2q0U/sendMessage',
+      `https://api.telegram.org/${this.BOT_TOKEN}/sendMessage`,
       {
         chat_id: payload.message.chat.id,
         text: 'Привет! Этот бот позволит найти исчерпывающую информацию по переезду в Турцию. Больше информации в меню.',
