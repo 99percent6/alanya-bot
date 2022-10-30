@@ -3,7 +3,7 @@
     "host": "HOST",
     "port": "PORT"
   },
-  "database": {
+  "mongodb": {
     "uri": "MONGO_DB_URL",
     "database": "MONGO_DB_DATABASE"
   },
